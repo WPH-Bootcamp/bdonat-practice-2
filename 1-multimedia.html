@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 1 - Multimedia</title>
+  </head>
+  <body>
+    <h1>BELAJAR TAG MULTIMEDIA</h1>
+
+    <!-- 1. VIDEO (video)  -->
+    <h2>1. VIDEO (video)</h2>
+    <!-- ONLINE -->
+    <video controls width="500" poster="./assets/img1.jpg">
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.mp4"
+        type="video/mp4"
+      />
+      Browser Mu tidak mendukung Video HTML5.
+    </video>
+    <br />
+    <!-- LOCAL -->
+    <video width="500" controls autoplay muted>
+      <source src="./assets/movie.mp4" type="video/mp4" />
+      Browser Mu tidak mendukung Video HTML5.
+    </video>
+
+    <!-- 2. AUDIO (audio) -->
+    <h2>2. AUDIO (audio)</h2>
+    <audio controls>
+      <source src="./assets/horse.mp3" type="audio/mp3" />
+      Browser Anda tidak mendukung audio HTML5.
+    </audio>
+
+    <!-- 3. Iframe (iframe) -->
+    <!-- -. Spotify -->
+    <iframe
+      data-testid="embed-iframe"
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/track/2SmKwCCSiUTjtR8I8rv6MS?utm_source=generator"
+      width="100%"
+      height="352"
+      frameborder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
+    <!-- -. Youtube -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/IqmD8Csm3w0?si=4MdKuoTMIGSs7dIF"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </body>
+</html>

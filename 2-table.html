@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 2 - Tables</title>
+  </head>
+  <body>
+    <h1>BELAJAR TAG TABLES</h1>
+
+    <!-- TABLES (table) -->
+    <!-- -. Simple Table -->
+    <table border="1">
+      <tr>
+        <th>No</th>
+        <th>Nama</th>
+        <th>Umur</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Ucup</td>
+        <td>38 Tahun</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Renday</td>
+        <td>20 Tahun</td>
+      </tr>
+    </table>
+
+    <!-- -. Semantic Table -->
+    <table border="1">
+      <caption>
+        Table 1.1 Penjualan
+      </caption>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+          <th>Umur</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ucup</td>
+          <td>38 Tahun</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Renday</td>
+          <td>20 Tahun</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+    <br />
+    <br />
+    <!-- Menggunakan Fungsi Merge Column dan Row -->
+    <table border="1">
+      <caption>
+        Table 1.2 Pengeluaran
+      </caption>
+      <tr>
+        <th rowspan="2">No</th>
+        <th rowspan="2">Nama</th>
+        <th rowspan="2">Umur</th>
+        <th colspan="2">Pengeluaran</th>
+      </tr>
+      <tr>
+        <th>Januari</th>
+        <th>Februari</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Ucup</td>
+        <td>38 Tahun</td>
+        <td>100.000</td>
+        <td>200.000</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Renday</td>
+        <td>20 Tahun</td>
+        <td>100.000</td>
+        <td>300.000</td>
+      </tr>
+    </table>
+  </body>
+</html>
