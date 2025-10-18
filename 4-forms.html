@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materi 4 - Forms</title>
+  </head>
+  <body>
+    <h1>BELAJAR FORMULIR BERSAMA COACH DICKY</h1>
+
+    <!-- 1. STRUKTUR DASAR FORMULIR -->
+    <h2>1. STRUKTUR DASAR FORMULIR</h2>
+    <form>
+      <label for="name">Name : </label>
+      <input
+        type="text"
+        name="name"
+        placeholder="Masukkan nama anda dong..."
+        required
+      />
+      <br />
+      <label for="age">Age :</label>
+      <input
+        type="number"
+        name="age "
+        placeholder="Masukkan umur anda dong...."
+      />
+      <br />
+      <label for="email">Email : </label>
+      <input
+        type="email"
+        name="email "
+        placeholder="Masukkan email anda dong..."
+      />
+      <br />
+      <label for="password">Password :</label>
+      <input type="password" name="password" placeholder="Ketik password" />
+      <br />
+      <label for="tanggal_lahir">Tanggal Lahir</label>
+      <input type="datetime-local" />
+      <br />
+      <input type="file" />
+      <br />
+      <label for="address">Alamat :</label>
+      <textarea name="" id=""></textarea>
+      <br />
+      <button type="submit">Kirim</button>
+    </form>
+    <br />
+    <!-- 2. RADIO BUTTON DAN CHECKBOX -->
+    <h2>2. RADIO BUTTON DAN CHECKBOX</h2>
+    <form>
+      <label for="gender">
+        Jenis Kelamin :
+        <input type="radio" name="gender" value="L" />Laki-laki
+        <input type="radio" name="gender" value="P" />Perempuan
+      </label>
+      <br />
+      <label for="hobby">
+        Hobby :
+        <input type="checkbox" name="hobby" value="ngoding" />Ngoding
+        <input type="checkbox" name="hobby" value="basket" />Basket
+        <input type="checkbox" name="hobby" value="mancing" />Mancing
+        <input type="text" name="hobby" />
+      </label>
+      <br />
+      <button type="submit">Kirim</button>
+    </form>
+    <br />
+    <!-- 3. SELECT OPTION / DROPDOWN -->
+    <h2>3. SELECT OPTION / DROPDOWN</h2>
+    <form>
+      <label for="city">Kota</label>
+      <select name="city">
+        <option value="" disabled selected>-- Pilih Kota --</option>
+        <option value="tangerang">Tangerang</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="bandung">Bandung</option>
+      </select>
+    </form>
+
+    <br />
+
+    <!-- CONTOH LAIN MENGGUNAKAN FORM -->
+    <form>
+      <fieldset>
+        <legend>Formulir Pendaftaran</legend>
+
+        <fieldset>
+          <legend>Data Pribadi</legend>
+          <label for="nama">Nama : </label>
+          <input type="text" name="nama" placeholder="Nama" required />
+          <br />
+          <label for="email">Email :</label>
+          <input type="email" name="email" placeholder="Email" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Buat Password</legend>
+          <label for="password">Password :</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" />Ingat saya
+        </fieldset>
+
+        <button type="submit">Daftar Sekarang</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
